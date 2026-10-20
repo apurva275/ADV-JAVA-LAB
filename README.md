@@ -34,14 +34,14 @@ A comprehensive, industry-aligned repository covering the entire **Advanced Java
 
 | Experiment / Module | Topic / Focus | Key Technologies | Location |
 | :--- | :--- | :--- | :--- |
-| **Experiment 1** | GUI Design & Event Handling | Java Swing, `JFrame`, `ActionListener` | [`LAB-1/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-1) |
-| **Experiment 2** | Model-View-Controller (MVC) Pattern | Swing GUI, Decoupled Architecture | [`LAB-2/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-2) |
-| **Experiment 3** | Database CRUD Operations | JDBC, `PreparedStatement`, MySQL 8 | [`LAB-3/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-3) |
-| **Experiment 4** | Network Stream Programming | `java.net.Socket`, `ServerSocket`, TCP | [`LAB-4/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-4) |
-| **Experiment 5** | Distributed Systems & Remoting | Java RMI, Remote Interface, Registry | [`LAB-5/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-5) |
-| **Experiment 6** | Server-Side Web Programming | Jakarta Servlets, `HttpSession`, Filters | [`LAB-6/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-6) |
-| **Experiment 7** | Dynamic Presentation & MVC View | JSP, Expression Language (EL), JSTL | [`LAB-7/`](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-7) |
-| **Capstone** | Full E-Commerce Platform | Servlets + JSP + Swing Admin + JDBC Pool | [`JAVA_PROJECT/ShopSphere/`](file:///p:/CODING/ADV.%20JAVA%20LAB/JAVA_PROJECT/ShopSphere) |
+| **Experiment 1** | GUI Design & Event Handling | Java Swing, `JFrame`, `ActionListener` | [Experiment 1](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%201) |
+| **Experiment 2** | Model-View-Controller (MVC) Pattern | Swing GUI, Decoupled Architecture | [Experiment 2](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%202) |
+| **Experiment 3** | Database CRUD Operations | JDBC, `PreparedStatement`, MySQL 8 | [Experiment 3](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%203) |
+| **Experiment 4** | Network Stream Programming | `java.net.Socket`, `ServerSocket`, TCP | [Experiment 4](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%204) |
+| **Experiment 5** | Distributed Systems & Remoting | Java RMI, Remote Interface, Registry | [Experiment 5](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%205) |
+| **Experiment 6** | Server-Side Web Programming | Jakarta Servlets, `HttpSession`, Filters | [Experiment 6](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%206) |
+| **Experiment 7** | Dynamic Presentation & MVC View | JSP, Expression Language (EL), JSTL | [Experiment 7](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%207) |
+| **Capstone** | Full E-Commerce Platform | Servlets + JSP + Swing Admin + JDBC Pool | [ShopSphere](file:///p:/CODING/ADV.%20JAVA%20LAB/JAVA_PROJECT/ShopSphere) |
 
 ---
 
@@ -50,34 +50,34 @@ A comprehensive, industry-aligned repository covering the entire **Advanced Java
 ```text
 ADV. JAVA LAB/
 │
-├── LAB-1/                              # Experiment 1: Student Registration GUI (Swing)
+├── Experiment 1/                       # Student Registration GUI (Swing)
 │   ├── StudentRegistration.java
 │   └── run_lab1.bat
 │
-├── LAB-2/                              # Experiment 2: MVC Swing Calculator
+├── Experiment 2/                       # MVC Swing Calculator
 │   ├── CalculatorModel.java
 │   ├── CalculatorView.java
 │   ├── CalculatorController.java
 │   └── Main.java
 │
-├── LAB-3/                              # Experiment 3: JDBC Database Operations
+├── Experiment 3/                       # JDBC Database Operations
 │   ├── lib/mysql-connector-j-26.7.0.jar
 │   ├── src/
 │   │   ├── JdbcDemo.java
 │   │   └── App.java
 │   └── bin/
 │
-├── LAB-4/                              # Experiment 4: TCP Socket Communication
+├── Experiment 4/                       # TCP Socket Communication
 │   ├── Server.java
 │   └── Client.java
 │
-├── LAB-5/                              # Experiment 5: Remote Method Invocation (RMI)
+├── Experiment 5/                       # Remote Method Invocation (RMI)
 │   ├── MyInterface.java
 │   ├── MyRemote.java
 │   ├── Server.java
 │   └── Client.java
 │
-├── LAB-6/                              # Experiment 6: Jakarta Servlet Web Application
+├── Experiment 6/                       # Jakarta Servlet Web Application
 │   └── servlet/
 │       ├── pom.xml
 │       └── src/main/
@@ -89,7 +89,7 @@ ADV. JAVA LAB/
 │           │   └── AppListener.java
 │           └── webapp/index.html
 │
-├── LAB-7/                              # Experiment 7: HTML to JSP Conversion & EL
+├── Experiment 7/                       # HTML to JSP Conversion & EL
 │   └── servlet/
 │       ├── pom.xml
 │       └── src/main/
@@ -129,7 +129,7 @@ ADV. JAVA LAB/
 * **Validation Features**: Ensures all required fields (Name, Roll Number, Gender, Branch, Terms Agreement) are populated; outputs formatted dialog upon submission and supports form clearing on reset.
 * **Execution**:
   ```bash
-  cd LAB-1
+  cd "Experiment 1"
   javac StudentRegistration.java
   java StudentRegistration
   ```
@@ -139,13 +139,13 @@ ADV. JAVA LAB/
 ### Experiment 2: Calculator following MVC Architecture
 * **Objective**: Build an arithmetic calculator implementing strict separation of concerns using the Model-View-Controller design pattern.
 * **Architecture**:
-  * **Model ([CalculatorModel.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-2/CalculatorModel.java))**: Contains pure arithmetic operations (`add`, `subtract`, `multiply`, `divide`). Handles zero-division safely.
-  * **View ([CalculatorView.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-2/CalculatorView.java))**: Pure UI presentation using Swing components with no calculation logic.
-  * **Controller ([CalculatorController.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-2/CalculatorController.java))**: Implements `ActionListener`, extracts input values from View, delegates computation to Model, and updates View result.
-  * **Entry Point ([Main.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-2/Main.java))**: Bootstraps and binds the MVC triad.
+  * **Model ([CalculatorModel.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%202/CalculatorModel.java))**: Contains pure arithmetic operations (`add`, `subtract`, `multiply`, `divide`). Handles zero-division safely.
+  * **View ([CalculatorView.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%202/CalculatorView.java))**: Pure UI presentation using Swing components with no calculation logic.
+  * **Controller ([CalculatorController.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%202/CalculatorController.java))**: Implements `ActionListener`, extracts input values from View, delegates computation to Model, and updates View result.
+  * **Entry Point ([Main.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%202/Main.java))**: Bootstraps and binds the MVC triad.
 * **Execution**:
   ```bash
-  cd LAB-2
+  cd "Experiment 2"
   javac *.java
   java Main
   ```
@@ -171,7 +171,7 @@ ADV. JAVA LAB/
   * `Statement` & `ResultSet`: Executes query and navigates cursor rows.
 * **Execution**:
   ```bash
-  cd LAB-3
+  cd "Experiment 3"
   javac -cp "lib/*" -d bin src/*.java
   java -cp "bin;lib/*" JdbcDemo
   ```
@@ -181,18 +181,18 @@ ADV. JAVA LAB/
 ### Experiment 4: TCP Socket Client-Server Network Programming
 * **Objective**: Implement connection-oriented network communication using stream sockets in the `java.net` package.
 * **Key Components**:
-  * **Server ([Server.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-4/Server.java))**: Listens on port `5000` via `ServerSocket`, accepts incoming connection via `accept()`, reads message via `BufferedReader`, and sends response via auto-flushing `PrintWriter`.
-  * **Client ([Client.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-4/Client.java))**: Connects to `localhost:5000`, transmits `"Hello Server"`, reads server response, and closes socket connection.
+  * **Server ([Server.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%204/Server.java))**: Listens on port `5000` via `ServerSocket`, accepts incoming connection via `accept()`, reads message via `BufferedReader`, and sends response via auto-flushing `PrintWriter`.
+  * **Client ([Client.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%204/Client.java))**: Connects to `localhost:5000`, transmits `"Hello Server"`, reads server response, and closes socket connection.
 * **Execution**:
   * *Terminal 1 (Server)*:
     ```bash
-    cd LAB-4
+    cd "Experiment 4"
     javac *.java
     java Server
     ```
   * *Terminal 2 (Client)*:
     ```bash
-    cd LAB-4
+    cd "Experiment 4"
     java Client
     ```
 
@@ -201,51 +201,51 @@ ADV. JAVA LAB/
 ### Experiment 5: Remote Method Invocation (Java RMI)
 * **Objective**: Develop a distributed Java application where a client calls methods of an object residing in a different JVM over the network.
 * **Architecture**:
-  * **Remote Interface ([MyInterface.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-5/MyInterface.java))**: Extends `java.rmi.Remote`, declares `int add(int a, int b) throws RemoteException;`.
-  * **Remote Object ([MyRemote.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-5/MyRemote.java))**: Extends `UnicastRemoteObject`, implements business logic (`return a + b`).
-  * **Server ([Server.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-5/Server.java))**: Creates remote object instance and binds it to RMI Registry at `rmi://localhost/Add`.
-  * **Client ([Client.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-5/Client.java))**: Locates remote reference via `Naming.lookup()` and invokes remote method.
+  * **Remote Interface ([MyInterface.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%205/MyInterface.java))**: Extends `java.rmi.Remote`, declares `int add(int a, int b) throws RemoteException;`.
+  * **Remote Object ([MyRemote.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%205/MyRemote.java))**: Extends `UnicastRemoteObject`, implements business logic (`return a + b`).
+  * **Server ([Server.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%205/Server.java))**: Creates remote object instance and binds it to RMI Registry at `rmi://localhost/Add`.
+  * **Client ([Client.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%205/Client.java))**: Locates remote reference via `Naming.lookup()` and invokes remote method.
 * **Execution**:
   * *Terminal 1 (Server)*:
     ```bash
-    cd LAB-5
+    cd "Experiment 5"
     javac *.java
     java Server
     ```
   * *Terminal 2 (Client)*:
     ```bash
-    cd LAB-5
+    cd "Experiment 5"
     java Client
     ```
 
 ---
 
-### Lab 6: Jakarta Servlet, Filters, Sessions & Listeners
+### Experiment 6: Jakarta Servlet, Filters, Sessions & Listeners
 * **Objective**: Study server-side Java programming with Jakarta Servlets on Apache Tomcat 11.
 * **Key Components**:
-  * **[HelloServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-6/servlet/src/main/java/com/servlet/HelloServlet.java)**: Demonstrates `doGet()` and `doPost()` handling.
-  * **[LoginServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-6/servlet/src/main/java/com/servlet/LoginServlet.java)**: Authenticates credentials, creates server-side `HttpSession`, and stores session attributes.
-  * **[AuthFilter.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-6/servlet/src/main/java/com/servlet/AuthFilter.java)**: `@WebFilter("/home")` intercepting incoming requests to protect resources from unauthenticated access.
-  * **[HomeServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-6/servlet/src/main/java/com/servlet/HomeServlet.java)**: Protected servlet rendering user state from session.
-  * **[AppListener.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-6/servlet/src/main/java/com/servlet/AppListener.java)**: `@WebListener` tracking application startup and shutdown events.
+  * **[HelloServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%206/servlet/src/main/java/com/servlet/HelloServlet.java)**: Demonstrates `doGet()` and `doPost()` handling.
+  * **[LoginServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%206/servlet/src/main/java/com/servlet/LoginServlet.java)**: Authenticates credentials, creates server-side `HttpSession`, and stores session attributes.
+  * **[AuthFilter.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%206/servlet/src/main/java/com/servlet/AuthFilter.java)**: `@WebFilter("/home")` intercepting incoming requests to protect resources from unauthenticated access.
+  * **[HomeServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%206/servlet/src/main/java/com/servlet/HomeServlet.java)**: Protected servlet rendering user state from session.
+  * **[AppListener.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%206/servlet/src/main/java/com/servlet/AppListener.java)**: `@WebListener` tracking application startup and shutdown events.
 * **Build & Deployment**:
   ```bash
-  cd LAB-6/servlet
+  cd "Experiment 6"/servlet
   mvn clean package
   # Output: target/servlet.war -> Deploy to Tomcat webapps/
   ```
 
 ---
 
-### Lab 7: HTML to Dynamic JSP Conversion & Expression Language
+### Experiment 7: HTML to Dynamic JSP Conversion & Expression Language
 * **Objective**: Convert static HTML forms into dynamic JavaServer Pages (**JSP**), separating presentation from controller logic using Expression Language (**EL**).
 * **Key Components**:
-  * **[student.jsp](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-7/servlet/src/main/webapp/student.jsp)**: User input view with page directives and registration form.
-  * **[HelloServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-7/servlet/src/main/java/com/servlet/HelloServlet.java)**: Controller reading parameters, attaching data to request scope via `request.setAttribute()`, and forwarding via `RequestDispatcher`.
-  * **[result.jsp](file:///p:/CODING/ADV.%20JAVA%20LAB/LAB-7/servlet/src/main/webapp/result.jsp)**: Dynamic view rendering parameters using Expression Language `${name}`, `${email}`, `${course}`, `${age}` without scriptlets.
+  * **[student.jsp](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%207/servlet/src/main/webapp/student.jsp)**: User input view with page directives and registration form.
+  * **[HelloServlet.java](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%207/servlet/src/main/java/com/servlet/HelloServlet.java)**: Controller reading parameters, attaching data to request scope via `request.setAttribute()`, and forwarding via `RequestDispatcher`.
+  * **[result.jsp](file:///p:/CODING/ADV.%20JAVA%20LAB/Experiment%207/servlet/src/main/webapp/result.jsp)**: Dynamic view rendering parameters using Expression Language `${name}`, `${email}`, `${course}`, `${age}` without scriptlets.
 * **Build & Deployment**:
   ```bash
-  cd LAB-7/servlet
+  cd "Experiment 7"/servlet
   mvn clean package
   # Output: target/servlet.war -> Deploy to Tomcat webapps/
   ```
